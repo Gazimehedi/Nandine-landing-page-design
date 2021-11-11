@@ -1,0 +1,651 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    Project Name
+Company Name: UnivaHost | ThemeAsia | Shipsoft
+Version:    2.0.0
+Last change:    09/07/19 [fixed Float bug, vf]
+Author Name: Author Name
+Primary use:    Project Type
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Body
+2.
+-------------------------------------------------------------------*/
+
+/*
+==========================================
+    Reset Css
+==========================================
+*/
+/*google font lato raleway*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Raleway:wght@300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+html,
+body{
+    height:100%;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+section{
+    padding:80px 0;
+}
+.btn{
+    color:#fff;
+    font-weight: bold;
+    border:1px solid #ff0000;
+    transition: 0.3s;
+}
+.btn:hover{
+    background:#fff !important;
+    color:#000;
+}
+.clear::after{
+    content:"";
+    clear: both;
+}
+/*
+==========================================
+    color Css
+==========================================
+*/
+.text-tomato{
+    color:#ff0000;
+}
+.bg-tomato{
+    background:#ff0000;
+}
+/*======================================Start Header======================================*/
+.header{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+.main-header{
+    background:#0b0b0ab0;
+    padding:6px 0;
+    z-index: 9999;
+}
+.main-menu ul{
+    float: right;
+    padding: 18px 0;
+}
+.main-menu ul li {
+    float: left;
+    margin-left: 26px;
+    font-size: 17px;
+}
+.main-menu ul li a{
+    color:#fff;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.main-menu ul li a:hover{
+    color:#d9020a;
+    text-decoration: none;
+}
+.hero{
+    background:linear-gradient(#00000073  ,#00000073 ), url(../img/header-bg.jpg)no-repeat;
+    background-size:cover;
+    background-position:center center;
+    height:100%;
+    width:100%;
+}
+.hero-info{
+    padding:0 120px;
+    padding-top:180px;
+    vertical-align: center;
+}
+.hero h1{
+    font-family: 'Raleway', sans-serif;
+}
+.hero p{
+    font-size:17px;
+}
+.hero .btn{
+    padding:5px 20px;
+    color:#fff;
+    font-weight: bold;
+    border-radius:0px;
+}
+.hero .btn:hover{
+    color:#000;
+}
+
+/*======================================End Header======================================*/
+/*======================================Start About======================================*/
+section h2:after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 1.5px;
+    background: #ff0000;
+    top: 100%;
+    left: 50%;
+    margin-left: -75px;
+    margin-top: 15px;
+}
+
+section h2:before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #ff0000;
+    border-radius: 50%;
+    top: 100%;
+    left: 50%;
+    margin-left: -7.5px;
+    margin-top: 8px;
+}
+.about-left-details {
+    padding:5px 0;
+    position: absolute;
+    bottom: 4px;
+    left: 3px;
+    text-align: center;
+    background: #2125299c;
+    width: 98.3%;
+    color: #fff;
+}
+.about-left-details li a{
+    font-size: 18px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    display: inline-block;
+    margin:0 5px;
+    color:#fff;
+    border-radius:50%;
+    background: #ff0000;
+}
+.about img{
+    width:360px;
+    height:460px;
+}
+/*======================================End About======================================*/
+/*======================================Start Video pop up ======================================*/
+.video-popup{
+    background:linear-gradient(#4444446b, #4444446b), url(../img/video-bg.jpg)no-repeat;
+    background-size:cover;
+    background-position:center center;
+}
+.video-popup a {
+    color: #fff;
+    font-size: 28px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 12px 26px;
+    transition:0.3s;
+}
+.video-popup a:hover{
+    color:#ff0000;
+    background:#fff;
+}
+/*======================================End Video pop up ======================================*/
+/*======================================Start Services======================================*/
+.services-item-icon a {
+    font-size: 50px;
+    color:#ff0000;
+}
+.services-item p{
+    font-size:14px;
+}
+/*======================================End Services======================================*/
+/*======================================Start Skill======================================*/
+.skill{
+    background:#ddd;
+}
+.skillbar {
+    position: relative;
+    display: inline-block;
+    margin: 7px 0;
+    background: rgb(0, 0, 0);
+    height: 18px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 0 5px;
+  }
+  
+  .skillbar-title {
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    font-weight:300;
+  }
+  
+  .skillbar-bar {
+    height: 10px;
+    width: 0px;
+    background: #6adcfa;
+    border-radius: 30px;
+    display: inline-block;
+    margin-bottom:3px;
+  }
+  
+  .skill-bar-percent {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    line-height: 19px;
+    color: #ffffff;
+  }
+  
+/*======================================End Skill======================================*/
+
+/*======================================Start Project Count======================================*/
+.project-count{
+    background: linear-gradient(#0000004f,#0000004f), url(../img/count-bg.jpg)no-repeat;
+    background-size: cover;
+}
+.count-icon {
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    display: inline-block;
+}
+.count-item span{
+    font-size:35px;
+}
+
+/*======================================End Project Count======================================*/
+/*======================================Start Portfolio======================================*/
+.portfolio-menu ul li botton{
+    padding:10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.portfolio-menu ul li botton:hover{
+    background:#ddd;
+}
+.portfolio .portfolio-item img{
+    width:100%;
+    height:280px;
+}
+.portfolio .mixitup-control-active{
+    color:#ff0000 !important;
+}
+.portfolio-item{
+    position: relative;
+}
+
+.portfolio-item-hover{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background:#ff00006e;
+    opacity: 0;
+    transition:0.3s;
+}
+.portfolio-item-hover a{
+    color:#fff;
+}
+.portfolio .mix:hover .portfolio-item-hover{
+    opacity: 1;
+}
+/*======================================End Portfolio======================================*/
+/*======================================Start Team======================================*/
+.team{
+    background:#ddd;
+}
+.team-member{
+    height: 320px;
+    max-width: 100%;
+    position: relative;
+}
+.team-member:hover{
+    box-shadow: 0px 0px 8px 0px #444;
+}
+.team .member-info{
+    padding:5px 0;
+    position: absolute;
+    bottom:-68px;
+    left: 0;
+    text-align: center;
+    background: #ff0000;
+    width:100%;
+    color: #fff;
+    transition: 0.5s;
+    z-index: 2;
+}
+.team-member-overlay{
+    width:100%;
+    height:100%;
+    position: absolute;
+    left:0;
+    top:-100%;
+    background:#ff000065;
+    z-index: 1;
+    transition: 0.5s;
+}
+.team-member:hover .member-info{
+    bottom:0;
+} 
+.team-member:hover .team-member-overlay{
+    top:0;
+} 
+.team .member-info li a{
+    font-size: 22px;
+    color:#fff;
+    border-radius:50%;
+    padding: 5px 7px;
+    background: #ff0000;
+}
+.team img{
+    width:100%;
+    height:100%;
+}
+/*======================================End Team======================================*/
+/*======================================Start Review======================================*/
+.tastemonial{
+    background:linear-gradient(#444444a3,#444444a3), url(../img/tastemonial-bg.jpg)no-repeat;
+    background-size: cover;
+    padding:0 !important;
+    padding-top:50px !important;
+}
+.clint-info img{
+    width:100px !important;
+    border-radius:50%;
+    margin:0 auto;
+}
+.clint-info p{
+    font-size: 14px;
+    line-height: 1.9;
+}
+.clint-info h5{
+    font-style: italic;
+}
+/*======================================End Review======================================*/
+/*======================================Start Blog======================================*/
+/*=====================Start Blog sidebar=======================*/
+aside{
+    width:70%;
+}
+aside .search-form{
+    position: relative;
+}
+aside .search-box{
+    border-radius: 0 !important;
+    border-color:#ff0000;
+    outline: none;
+}
+aside .search-box:focus{
+    border-color: #ff0000;
+    box-shadow: 0 0 0 0.2rem #ff000031;
+}
+aside .search-icon{
+    padding: 7px 20px;
+    background: #ff0000;
+    color: #fff;
+    position: absolute;
+    right:0;
+    top: 0;
+    z-index: 1;
+}
+aside .catagoris hr{
+    border-color:#000;
+    margin-top:10px;
+    margin-bottom:20px;
+}
+aside .catagoris ul li a{
+    color:#000;
+    text-decoration: none;
+}
+aside .catagoris ul li a:hover{
+    color:#ff0000;
+}
+.latest-post .post{
+    padding-top:20px;
+    display: inline-block;
+}
+.latest-post .post img{
+    width:60px;
+    float: left;
+    margin-top: 7px;
+}
+aside .latest-post .post-details {
+    width: 168px;
+    float: left;
+    padding-left: 10px;
+}
+.post-details span {
+    font-size: 14px;
+    color: #666;
+}
+.post-details h6 a{
+    font-size: 14px;
+    color:#000;
+    text-decoration: none;
+}
+/*=====================End Blog sidebar=========================*/
+.blog-item{
+    box-shadow: 0px 0px 10px 0px #99999994;
+}
+.card-heading{
+    border-top:10px solid #ff0000;
+    padding-top:5px;
+}
+.card-info .card-date{
+    font-weight:300;
+}
+.card-info .card-text{
+    font-size: 14px;
+}
+/*=====================Start Blog pagination=========================*/
+.pagination table{
+    border:1px solid #000;
+}
+.pagination tr td{
+    padding: 2px 15px;
+}
+.pagination tr td a{
+    color:#000;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-size:16px;
+}
+.pagination tr td.active {
+    background: #ff0000;
+    border: 1px solid #ff0000 !important;
+}
+.pagination tr td:first-child a {
+    font-size: 20px;
+    vertical-align: text-bottom;
+    font-weight: bold;
+}
+.pagination tr td:last-child a {
+    font-size: 20px;
+    vertical-align: text-bottom;
+    font-weight: bold;
+    color:#fff;
+}
+/*=====================Start single Blog=========================*/
+.single-blog-item img {
+    width: 100%;
+    height: 380px;
+}
+.single-blog-info .single-blog-date {
+    font-size: 16px;
+    font-family: 'Lato';
+}
+.single-blog-info .single-blog-date .svg-inline--fa {
+    font-size: 15px;
+    margin-right: 3px;
+}
+.single-blog-info .single-blog-text {
+    font-size: 16px;
+    font-family: 'Roboto';
+}
+.comment-items h5{
+    font-size: 24px;
+}
+.comment-items .comment-underline {
+    background: #000;
+    width: 250px;
+    margin-top: 2px;
+}
+.comment .user-image img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+p.comment-text {
+    width: 400px;
+}
+.user-image {
+    float: left;
+}
+.comment-info {
+    float: left;
+    padding-left: 20px;
+}
+.comment-info a {
+    margin-top: 5px;
+    display: inline-block;
+    color: #010101;
+    font-weight: 600;
+}
+.comment-info a:hover{
+    color:#6adcfa;
+    text-decoration: none;
+}
+.reply-info {
+    float: left;
+    padding-left: 20px;
+}
+.reply-info a {
+    margin-top: 5px;
+    display: inline-block;
+    color: #010101;
+    font-weight: 600;
+}
+.reply-info a:hover{
+    color:#6adcfa;
+    text-decoration: none;
+}
+p.reply-text {
+    width: 400px;
+}
+.reply{
+    margin-top: 30px;
+}
+hr.comment-ending-line {
+    width: 580px;
+    background: #ddd;
+}
+/* comment form */
+.comment-form{
+    width:580px;
+    margin-top:30px;
+}
+.comment-form .form-control{
+    margin-bottom: 20px;
+    padding: 22px 15px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+.comment-form .form-control:focus{
+    box-shadow: none;
+}
+.comment-form .btn{
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+/*======================================End Blog======================================*/
+/*======================================Start contact======================================*/
+.contact{
+    background:linear-gradient(#999999bf, #999999bf), url(../img/contact-bg.jpg)no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.contact input::placeholder,textarea::placeholder{
+    color:#fff;
+}
+.form-controls{
+    width:100%;
+    padding:8px 15px;
+    border:2px solid#fff;
+    background:transparent;
+    color:#fff;
+    outline:none;
+}
+.contact .btn{
+    padding:5px 20px;
+    color:#fff;
+    font-weight: bold;
+    border-radius:0px;
+}
+.contact .btn:hover{
+    color:#000;
+}
+
+/*======================================End contact======================================*/
+/*======================================Start footer======================================*/
+.footer{
+    padding:15px 0;
+    background:#1a1a1a;
+    color:#fff;
+}
+.footer .social-icon li a{
+    font-size: 18px;
+    color:#fff;
+    padding: 5px 7px;
+}
+.footer p{
+    font-size: 14px;
+    padding-top: 4px;
+}
+/*======================================End Footer======================================*/
+/*======================================Start page name======================================*/
+.page-name{
+    background:linear-gradient(#999999bf, #999999bf), url(../img/page-name-bg.jpg)no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+/*======================================End Page name======================================*/
